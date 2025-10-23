@@ -3,16 +3,16 @@ tasks:
     cmd: bash setup_env.sh
 
   - name: preprocess
-    cmd: python preprocess.py
+    cmd: python3 preprocess.py
 
   - name: train
-    cmd: python train.py
+    cmd: python3 train.py
     depends_on:
       - preprocess
       - setup_env
 
   - name: evaluate
-    cmd: python evaluate.py
+    cmd: python3 evaluate.py
     depends_on:
       - train
     ignore_failed_dependencies: true

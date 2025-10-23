@@ -1,0 +1,37 @@
+[2025-10-23 11:42:54] START setup_env: bash setup_env.sh
+Setting up environment...
+Environment ready ✅
+[2025-10-23 11:42:55] END setup_env ✅ (code=0)
+
+[2025-10-23 11:42:55] START preprocess: python preprocess.py
+/bin/sh: 1: python: not found
+[2025-10-23 11:42:55] END preprocess ❌ (code=127)
+
+[2025-10-23 11:42:55] START evaluate: python evaluate.py
+/bin/sh: 1: python: not found
+[2025-10-23 11:42:55] END evaluate ❌ (code=127)
+
+[2025-10-23 11:43:57] START preprocess: python preprocess.py
+/bin/sh: 1: python: not found
+[2025-10-23 11:43:57] END preprocess ❌ (code=127)
+
+[2025-10-23 11:46:48] START setup_env: bash setup_env.sh
+Setting up environment...
+Environment ready ✅
+[2025-10-23 11:46:49] END setup_env ✅ (code=0)
+
+[2025-10-23 11:46:49] START preprocess: python3 preprocess.py
+Preprocessing data...
+Data preprocessing completed ✅
+[2025-10-23 11:46:50] END preprocess ✅ (code=0)
+
+[2025-10-23 11:46:50] START train: python3 train.py
+Training model...
+Model training completed ✅
+[2025-10-23 11:46:52] END train ✅ (code=0)
+
+[2025-10-23 11:46:52] START evaluate: python3 evaluate.py
+Evaluating model...
+Evaluation completed ✅
+[2025-10-23 11:46:53] END evaluate ✅ (code=0)
+
