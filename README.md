@@ -30,6 +30,8 @@ taskpilot_test/
 ├─ train.py             # Mock Python task
 └─ evaluate.py          # Mock Python task
 ~~~
+---
+
 ## ⚙️ pipeline.yaml Example
 ~~~ yaml
 tasks:
@@ -57,32 +59,39 @@ Notes:
 `depends_on` → optional, can be a string or a list
 
 `ignore_failed_dependencies`: true → task runs even if dependencies failed
+---
 
 ## 💻 Usage
-~~~
 Run all tasks
+~~~
 python taskpilot.py run all
 ~~~
-~~~
+
 Run a single task
+~~~
 python taskpilot.py run <task_name>
 ~~~
-~~~
+
 Retry a task
+~~~
 python taskpilot.py retry <task_name>
 ~~~
-~~~
+
 Force re-run all tasks
+~~~
 python taskpilot.py run all --force
 ~~~
-~~~
+
 Show task status
+~~~
 python taskpilot.py status
 ~~~
-~~~
+
 Clear logs/checkpoints
+~~~
 python taskpilot.py clean
 ~~~
+---
 ## 📋 Logs & Checkpoints
 
 All logs and checkpoints are stored in taskpilot.log
@@ -101,6 +110,7 @@ Dependencies are optional, not strict — sequence is mostly top-to-bottom
 `ignore_failed_dependencies` gives flexibility for non-critical tasks
 
 Pure Python, no extra dependencies
+---
 
 ## 👍 Key Benefits
 
