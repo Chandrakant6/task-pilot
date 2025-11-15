@@ -1,0 +1,7 @@
+- task: clean_data
+  args:
+    threshold: 5
+
+- task: analyze
+  args:
+    multiplier: 2
